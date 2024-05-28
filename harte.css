@@ -15,7 +15,40 @@ https://github.com/Nodws/HarteCSS/
 }
 
 //Default Colors, keep if you want
-:root{
+:root,[data-color-scheme=light] {
+    --default: #1f2328;
+    --subtle: #1f2328;
+    --contrast: #e6edf3;
+    --muted: #656d76;
+    --accent: #0969da;
+    --active: #8250df;
+    --variant: #bf3989;
+    --success: #1a7f37;
+    --attention: #9a6700;
+    --severe: #bc4c00;
+    --danger: #d1242f;
+    --bg-default: #ffffff;
+    --bg-subtle: #d0d7de;
+    --bg-contrast: #24292f;
+    --bg-muted: #f6f8fa;
+    --bg-accent: #ddf4ff;
+    --bg-active: #fbefff;
+    --bg-variant: #ffeff7;
+    --bg-success: #dafbe1;
+    --bg-attention: #fff8c5;
+    --bg-severe: #fff1e5;
+    --bg-danger: #ffebe9;
+    --backdrop: #8c959f33;
+    --bd-muted: #d0d7deb3;
+    //shadows
+    --shadow: 0px 0px 0px 1px var(--bg-subtle), 0px 6px 12px -3px var(--backdrop), 0px 6px 18px 0px var(--backdrop);
+    //fonts
+    --font: sans-serif;
+    --font-size: 1rem;
+    //default radius is 0px
+    --bd-radius: 0px
+}
+[data-color-scheme=dark] {
 --default: #e6edf3;
 --subtle: #e6edf3;
 --contrast: #1f2328;
@@ -40,8 +73,6 @@ https://github.com/Nodws/HarteCSS/
 --bg-danger: #25171c;
 --bd-muted: #30363db3;
 --backdrop: #161b2266;
-//fonts
---font: sans-serif;
 }
 
 //Elements
